@@ -4,12 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
-header{
-    padding: 3rem;
-}
 
 body{
     font-family: 'poppins', sans-serif;
@@ -379,6 +375,7 @@ span{
     color: white;
 }
 
+/* responsive index */
 @media screen and (max-width: 480px) {
     body{
         width: 480px;
@@ -421,7 +418,30 @@ span{
 
     .footer{
         height: 232px;
-    }    
+    } 
+    
+    /*responsive about-me  */
+    .about-info h2{
+        font-size: 35px;
+              
+    }
+
+    .about-info p{
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .about{
+        display: flex;
+        justify-content: center;
+    }
+
+    .about img{
+      display: none;
+    }
+
+    /* responsive portfolio */
+
 }
 
 @media screen and (max-width: 768px){
@@ -525,7 +545,4 @@ span{
     .footer{
         height: 232px;
     }
-
-
-
 }
