@@ -376,7 +376,7 @@ span{
 }
 
 /* responsive index */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 360px) {
     body{
         width: 480px;
     }
@@ -385,7 +385,7 @@ span{
         display: none;
     } 
     
-    .brand{
+    .brand h2{
         display: flex;
         font-size: 23px;
     }
@@ -395,6 +395,10 @@ span{
         flex-direction: column;
         font-size: 18px;
         align-items: flex-end;
+    }
+
+    .menu a{
+        font-size: 15px;
     }
 
     .info-content h1{
@@ -418,12 +422,36 @@ span{
 
     .footer{
         height: 232px;
+        font-size: 12px;
     } 
     
-    /*responsive about-me  */
+    /*responsive about-me */
+    .wrapper__about-me{
+        background-color: #202022;
+        width: 100vw;
+        height: 100vh;
+        color: #fff;
+    }
+    
+    .brand h2{
+        display: flex;
+        font-size: 23px;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        align-items: flex-end;
+    }
+
+    .menu a{
+        font-size: 15px;
+               
+    }
+
     .about-info h2{
-        font-size: 35px;
-              
+        font-size: 35px;          
     }
 
     .about-info p{
@@ -439,12 +467,151 @@ span{
     .about img{
       display: none;
     }
+    
+    .footer-content h2,
+    .footer-content h5{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .social-network i{
+        font-size: 30px;
+    }
 
     /* responsive portfolio */
+    .hero__navbar-portfolio{
+        background-color: #28282B;
+        width: 100vw;
+        height: 20vh;
+        color: #fff;
+    }
+    
+    .brand h2{
+        display: flex;
+        font-size: 23px;
+    }
 
+    .menu{
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        align-items: flex-end;
+    }
+
+    .menu a{
+        font-size: 15px; 
+    }
+
+    .portfolio .container{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        width: 90%;
+     }
+
+    .card2, .card3{
+        display: none;
+    }
+
+    .footer-content h2,
+    .footer-content h5{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .social-network i{
+        font-size: 30px;
+    }
+    
+    /* responsive contact */
+    .hero__navbar{
+        background-color: #202022;
+        width: 100vw;
+        height: 20vh;
+        color: #fff;
+    }
+    .brand h2{
+        display: flex;
+        font-size: 23px;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        align-items: flex-end;
+    }
+
+    .menu a{
+        font-size: 15px; 
+    }
+
+    .contact-headings h2{
+        font-size: 33px;
+    }
+
+    .container-contact img{
+        display: none;
+    }
+
+    .contact-form .form input{
+        font-size: 20px;
+    }
+
+    .contact-form .form textarea{
+        font-size: 15px;
+    }
+
+    .contact-form .form button{
+        font-size: 11px;
+    }
+
+    .contact-form .form {
+        width: 90%;
+    }
+
+    .contact-form h4{
+        font-size: 20px;
+    }
+
+    /* responsive technology */
+    .wrapper__technology{
+        background-color: #28282B;
+        width: 100vw;
+        color: #fff;
+    }
+
+    .brand h2{
+        display: flex;
+        font-size: 23px;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        align-items: flex-end;
+    }
+
+    .menu a{
+        font-size: 15px; 
+    }
+
+    .portfolio-headings h2{
+        font-size: 30px;
+    }
+
+    .technology__content{
+        display: block;
+    }
+
+    .technology__content div {
+        margin-top: 3rem;
+    }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 740px){
+    /* responsive index */
     body{
         width: 480px;
     }
@@ -458,9 +625,9 @@ span{
         display: none;
     }
        
-    .brand{
+    .brand h2{
         display: flex;
-        font-size: 23px;
+        font-size: 25px;
     }
 
     .menu{
@@ -470,8 +637,12 @@ span{
         align-items: flex-end;
     }
 
+    .menu a{
+
+    }
+
     .info-content h1{
-        font-size: 30px;
+        font-size: 20px;
         margin: 10px;
         text-align: center;
     }
@@ -491,58 +662,104 @@ span{
 
     .footer{
         height: 232px;
-    }
-
-
-
-}
-
-@media screen and (max-width: 1200px){
-    body{
-        width: 480px;
-    }
-
-    .main{
-        display: flex;
-        text-align: center;
-    }
-
-    .main img{
-        display: none;
-    }
-       
-    .brand{
-        display: flex;
-        font-size: 23px;
-    }
-
-    .menu{
-        display: flex;
-        flex-direction: column;
-        font-size: 18px;
-        align-items: flex-end;
-    }
-
-    .info-content h1{
-        font-size: 30px;
-        margin: 10px;
-        text-align: center;
-    }
-
-    .info-content h2{
-        margin: 10px;
-        text-align: center;
         font-size: 20px;
     }
 
-    .staart{
-        justify-content: center;
-        margin: 20px;
-        display: flex;
-        text-decoration: none;   
+    /* responsive about me */
+    .wrapper__about-me{
+        background-color: #202022;
+        width: 100vw;
+        height: 100vh;
+        color: #fff;
     }
 
-    .footer{
-        height: 232px;
+    .about-info h2{
+        font-size: 28px;
+    }
+
+    .footer-content h2,
+    .footer-content h5{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .social-network i{
+        font-size: 25px;
+    }
+
+    /* responsive portfolio */
+    .hero__navbar-portfolio{
+        background-color: #28282B;
+        width: 100vw;
+        color: #fff;
+    }
+
+    .about-info h2{
+        font-size: 28px;
+    }
+
+    .portfolio-headings h2{
+        font-size: 30px;
+    }
+    
+    .footer-content h2,
+    .footer-content h5{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .social-network i{
+        font-size: 25px;
+    }
+
+    /* responsive contact */
+    .hero__navbar{
+        background-color: #202022;
+        width: 100vw;
+        color: #fff;
+    }
+
+    .contact-section{
+        width: 100vw;
+    }
+
+    .contact-headings h2{
+        font-size: 30px;
+    }
+
+    .container-contact img{
+        display: none;
+    }
+
+    .contact-form h4{
+        font-size: 25px;
+    }
+
+    .about-info h2{
+        font-size: 28px;
+    }
+
+    .portfolio-headings h2{
+        font-size: 30px;
+    }
+    
+    .footer-content h2,
+    .footer-content h5{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .social-network i{
+        font-size: 25px;
+    }
+
+    /* responsive technology */
+    .wrapper__technology{
+        width: 100vw;
+    }
+
+    .portfolio-headings h2{
+        font-size: 28px;
     }
 }
+
