@@ -43,6 +43,12 @@ body{
 .technology__content div img {
     width: 100%;
     height: 100%;
+    transition: all 308ms;
+    position: relative;
+}
+
+.technology__content div img:hover{
+    transform: scale(1.30);
 }
 
 .hero__navbar{
