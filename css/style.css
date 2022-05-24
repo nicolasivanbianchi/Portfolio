@@ -765,3 +765,17 @@ span{
     }
 }
 
+/* css bootstrap */
+.banner-image{
+    background-image: url(../imgs/background.png);
+    background-size: cover;
+}
+
+.container h2{
+    color: white;
+}
+
+.contact-me{
+    background-image: url(../imgs/background.png);
+}
+
