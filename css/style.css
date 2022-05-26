@@ -937,6 +937,37 @@ span{
     background: linear-gradient( 263deg, rgba(2,0,36,100) 0%, rgba(100,244,172,100) 100% );
 }
 
+/* css bootstrap ABOUT-ME */
+.about-1{
+    margin: 30px;
+    padding: 5px;
+}
+
+.about-1 h1{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.about-1 p{
+    text-align: center;
+    padding: 3px;
+    color: #fff;
+}
+
+.about-item{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: white;
+    padding: 80px,30px;
+    box-shadow: 0 0 9px rgba(0,0,0 .6);
+}
+
+.about-item i{
+    font-size: 43px;
+    margin: 0;
+}
+
 /* css bootstrap CONTACT*/
 .body-contact{
     width: 100%;
