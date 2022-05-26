@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
-    <title>Home | Nicolás Bianchi</title>
+    <title>Contact | Nicolás Bianchi</title>
     <link rel="icon" type="image/png" sizes="16x16" href="./imgs/favicon-16x16.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-<body class="bodyy">
+<body class="body-contact bodyy">
     <!-- navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
         <div class="container">
@@ -30,58 +27,40 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="mx-auto"></div>
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a href="#" class="nav-link text-white ">Home</a></li>
-                    <li class="nav-item"><a href="pages/about-me.html" class="nav-link text-white ">About Me</a></li>
-                    <li class="nav-item"><a href="pages/portfolio.html" class="nav-link text-white ">Portfolio</a></li>
-                    <li class="nav-item"><a href="pages/contact2.html" class="nav-link text-white ">Contact</a></li>
-                    <li class="nav-item"><a href="pages/technology.html" class="nav-link text-white ">Technology</a></li>
+                    <li class="nav-item"><a href="../index2.html" class="nav-link text-white ">Home</a></li>
+                    <li class="nav-item"><a href="about-me.html" class="nav-link text-white ">About Me</a></li>
+                    <li class="nav-item"><a href="portfolio.html" class="nav-link text-white ">Portfolio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white ">Contact</a></li>
+                    <li class="nav-item"><a href="technology.html" class="nav-link text-white ">Technology</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Banner Image -->
-    <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
-        <div class="content text-center">
-            <h1 class="text-white">Hello, my name is <span>Nicolás Bianchi</span> :]</h1>
-            <div class="color">
-            <h2 class="text-white"> I'm a <span>Programming Student</span> </h2>
-            </div>
+    <!-- form -->
+    <div class="contactBox">
+        <div class="left">
+            <img src="../imgs/pc.png" alt="pc">
+        </div>
+        <div class="right">
+            <h2>Contact Me</h2>
+            <form action="">
+                <input type="text" name="name" id="" placeholder="Your Name">
+                <input type="email" name="email" id="" placeholder="Your Email">
+                <textarea name="message" id="" cols="30" rows="10">Message</textarea>
+                <input type="submit" name="submit" id="" value="submit">
+            </form>
         </div>
     </div>
 
-    <!-- Main  -->
-    <main class="mainn container my-5 d-grid gap-5">
-        <div class="p-5 border p1">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint at excepturi laudantium sapiente aliquam
-                sequi veniam quam nihil magnam, perferendis possimus, dolor qui, quibusdam voluptatibus dolore tenetur
-                obcaecati harum labore.
-            </p>
-        </div>
-        <div class="p-5 border p2">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint at excepturi laudantium sapiente aliquam
-                sequi veniam quam nihil magnam, perferendis possimus, dolor qui, quibusdam voluptatibus dolore tenetur
-                obcaecati harum labore.
-            </p>
-        </div>
-        <div class="p-5 border p3">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint at excepturi laudantium sapiente aliquam
-                sequi veniam quam nihil magnam, perferendis possimus, dolor qui, quibusdam voluptatibus dolore tenetur
-                obcaecati harum labore.
-            </p>
-        </div>
-    </main>
     <!-- pagination -->
     <ul class="pagination justify-content-center ">
         <li class="page-item"><a class="page-link" href="#"> Anterior </a></li>
-        <li class="page-item"><a class="page-link" href="#"> 1 </a></li>
-        <li class="page-item"><a class="page-link" href="pages/about-me.html"> 2 </a></li>
-        <li class="page-item"><a class="page-link" href="pages/portfolio.html"> 3 </a></li>
-        <li class="page-item"><a class="page-link" href="pages/contact.html"> 4 </a></li>
-        <li class="page-item"><a class="page-link" href="pages/technology.html"> 5 </a></li>
+        <li class="page-item"><a class="page-link" href="../index2.html"> 1 </a></li>
+        <li class="page-item"><a class="page-link" href="about-me.html"> 2 </a></li>
+        <li class="page-item"><a class="page-link" href="portfolio.html"> 3 </a></li>
+        <li class="page-item"><a class="page-link" href="#"> 4 </a></li>
+        <li class="page-item"><a class="page-link" href="technology.html"> 5 </a></li>
         <li class="page-item"><a class="page-link" href=""> Siguiente </a></li>
     </ul>
 
@@ -111,5 +90,4 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
     </script>
 </body>
-
 </html>
