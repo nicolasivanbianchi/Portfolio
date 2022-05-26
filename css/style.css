@@ -776,46 +776,42 @@ span{
     border-bottom: 1px solid #64F4AC;
 }
 
+@keyframes typing{
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blinkCursor{
+    from, to {
+        border-color: transparent;
+    }
+    50%{
+        border-color: #64F4AC;
+    }
+}
+
 .color{
-    position: relative;
+    display: flex;
+    justify-content: center;
     -webkit-box-reflect: below 20px linear-gradient(transparent, #0002);
 }
 
-.color::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: #64F4AC;
-    animation: blinkCursor 0.8s steps(3) infinite;
-}
-@keyframes blinkCursor{
-    0%,75%{
-        opacity: 1;
-    }
-    76%,100%{
-        opacity: 0;
-    }
-}
-
 .color h2{
-    position: relative;
     color: #64F4AC;
-    letter-spacing: 3px;
+    letter-spacing: 0.15rem;
     font-size: 25px;
-    animation: typing 8s steps(10) infinite;
     overflow: hidden;
-
-}
-@keyframes typing{
-    0%,90%,100%{
-        width: 0;
-    }
-    30%,60%{
-        width: 401.88px;
-    }
+    border-right: 0.15rem solid #64F4AC;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15rem;
+    animation:
+        typing 3.5s steps(30, end),
+        blinkCursor 0.75s step-end infinite;
 }
 
 .mainn{
