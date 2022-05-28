@@ -6,6 +6,9 @@
     box-sizing: border-box;
 }
 
+html{
+    overflow-x: hidden;
+}
 
 body{
     font-family: 'poppins', sans-serif;
