@@ -349,7 +349,7 @@ span{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 200px;
     background-color: #202022; 
     color: #fff;   
@@ -628,10 +628,6 @@ span{
 
 @media screen and (max-width: 740px){
     /* responsive index */
-    body{
-        width: 480px;
-    }
-
     .main{
         display: flex;
         text-align: center;
@@ -832,16 +828,17 @@ span{
 .p2,
 .p3{
     border-radius: 10px;
+    transition: all 300ms ease-in-out;
 }
 
 .p1:hover{
-    box-shadow: 16px 14px 20px #64F4AC;
+    box-shadow: 0px 8px 30px #64F4AC;
 }
 .p2:hover{
-    box-shadow: 16px 14px 20px #64F4AC;
+    box-shadow: 0px 8px 30px #64F4AC;
 }
 .p3:hover{
-    box-shadow: 16px 14px 20px #64F4AC;
+    box-shadow: 0px 8px 30px #64F4AC;
 }
 
 .page-link{
