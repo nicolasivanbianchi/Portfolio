@@ -674,10 +674,6 @@ span {
   background: linear-gradient(263deg, #020024 0%, #64f4ac 100%); }
 
 /*css technologies*/
-.bodyyy {
-  display: grid;
-  place-items: center; }
-
 .wrapper-i {
   margin-top: 200px; }
 
