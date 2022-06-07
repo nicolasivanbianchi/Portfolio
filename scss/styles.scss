@@ -323,740 +323,761 @@ span {
         background: none;
         color: $white-color;
         padding: 1.5em;
-        border: 1px solid $primary-color;        
+        border: 1px solid $primary-color;
     }
 
-.btn-submit {
-    padding: 10px 20px;
-    margin: 1em;
-    border: none;
-    text-transform: uppercase;
-    background-color: $primary-color;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.btn-submit:hover {
-    box-shadow: 1px 1px 20px 1px $primary-color;
-}
-
-.footer {
-    border-top: 1px solid $primary-color;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 200px;
-    background-color: #202022;
-    color: $white-color;
-
-    &-content {
-        text-align: center;
-
-        & h3 {
-            font-size: 1em;
-        }
-
-        & h5 {
-            font-size: 1.5em;
-        }
-    }
-}
-
-.social-network {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    column-gap: 1.5em;
-
-    & i {
-        transition: all 300ms;
-
-        &:hover {
-            transform: scale(1.3);
-        }
+    .btn-submit {
+        padding: 10px 20px;
+        margin: 1em;
+        border: none;
+        text-transform: uppercase;
+        background-color: $primary-color;
+        border-radius: 20px;
+        cursor: pointer;
     }
 
-    & li {
-        font-size: 2em;
+    .btn-submit:hover {
+        box-shadow: 1px 1px 20px 1px $primary-color;
+    }
 
-        & a {
-            color: gray;
+    .footer {
+        border-top: 1px solid $primary-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 200px;
+        background-color: #202022;
+        color: $white-color;
 
-            &:hover {
-                color: white;
+        &-content {
+            text-align: center;
+
+            & h3 {
+                font-size: 1em;
+            }
+
+            & h5 {
+                font-size: 1.5em;
             }
         }
     }
-}
 
-/* mq mobile index */
-@include mobile(sm) {
-    body {
-        width: 480px;
-    }
-
-    .main img {
-        display: none;
-    }
-
-    .brand h2 {
+    .social-network {
         display: flex;
-        font-size: 23px;
-    }
+        justify-content: space-between;
+        list-style-type: none;
+        column-gap: 1.5em;
 
-    .menu {
-        display: flex;
-        flex-direction: column;
-        font-size: 18px;
-        align-items: flex-end;
+        & i {
+            transition: all 300ms;
 
-        & a {
-            font-size: 15px;
+            &:hover {
+                transform: scale(1.3);
+            }
+        }
+
+        & li {
+            font-size: 2em;
+
+            & a {
+                color: gray;
+
+                &:hover {
+                    color: white;
+                }
+            }
         }
     }
 
-    .info-content h1 {
-        font-size: 30px;
-        margin: 10px;
-        text-align: center;
-    }
-
-    .info-content h2 {
-        margin: 10px;
-        text-align: center;
-        font-size: 20px;
-    }
-
-    .staart {
-        justify-content: center;
-        margin: 20px;
-        display: flex;
-        text-decoration: none;
-    }
-
-    .footer {
-        height: 232px;
-        font-size: 12px;
-    }
-
-    /* mq mobile about me */
-    .wrapper__about-me {
-        background-color: #202022;
-        width: 100vw;
-        height: 100vh;
-        color: $white-color;
-    }
-
-    .brand h2 {
-        display: flex;
-        font-size: 23px;
-    }
-
-    .menu {
-        display: flex;
-        flex-direction: column;
-        font-size: 18px;
-        align-items: flex-end;
-
-        & a {
-            font-size: 15px;
+    /* mq mobile index */
+    @include mobile(sm) {
+        body {
+            width: 480px;
         }
-    }
 
-    .about-info h2 {
-        font-size: 35px;
-    }
-
-    .about-info p {
-        text-align: center;
-        font-size: 15px;
-    }
-
-    .about {
-        display: flex;
-        justify-content: center;
-
-        & img {
+        .main img {
             display: none;
         }
-    }
 
-    .footer-content h3,
-    .footer-content h5 {
-        font-size: 15px;
-        text-align: center;
-    }
+        .brand h2 {
+            display: flex;
+            font-size: 23px;
+        }
 
-    .social-network i {
-        font-size: 30px;
-    }
+        .menu {
+            display: flex;
+            flex-direction: column;
+            font-size: 18px;
+            align-items: flex-end;
 
-    /* mq mobile portfolio */
-    .hero__navbar-portfolio {
-        background-color: #28282B;
-        width: 100vw;
-        height: 20vh;
-        color: $white-color;
-    }
+            & a {
+                font-size: 15px;
+            }
+        }
 
-    .brand h2 {
-        display: flex;
-        font-size: 23px;
-    }
+        .info-content h1 {
+            font-size: 30px;
+            margin: 10px;
+            text-align: center;
+        }
 
-    .menu {
-        display: flex;
-        flex-direction: column;
-        font-size: 18px;
+        .info-content h2 {
+            margin: 10px;
+            text-align: center;
+            font-size: 20px;
+        }
 
-        & a {
+        .staart {
+            justify-content: center;
+            margin: 20px;
+            display: flex;
+            text-decoration: none;
+        }
+
+        .footer {
+            height: 232px;
+            font-size: 12px;
+        }
+
+        /* mq mobile about me */
+        .wrapper__about-me {
+            background-color: #202022;
+            width: 100vw;
+            height: 100vh;
+            color: $white-color;
+        }
+
+        .brand h2 {
+            display: flex;
+            font-size: 23px;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            font-size: 18px;
+            align-items: flex-end;
+
+            & a {
+                font-size: 15px;
+            }
+        }
+
+        .about-info h2 {
+            font-size: 35px;
+        }
+
+        .about-info p {
+            text-align: center;
             font-size: 15px;
+        }
+
+        .about {
+            display: flex;
+            justify-content: center;
+
+            & img {
+                display: none;
+            }
+        }
+
+        .footer-content h3,
+        .footer-content h5 {
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .social-network i {
+            font-size: 30px;
+        }
+
+        /* mq mobile portfolio */
+        .hero__navbar-portfolio {
+            background-color: #28282B;
+            width: 100vw;
+            height: 20vh;
+            color: $white-color;
+        }
+
+        .brand h2 {
+            display: flex;
+            font-size: 23px;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            font-size: 18px;
+
+            & a {
+                font-size: 15px;
+            }
+        }
+
+        .portfolio .container {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            width: 90%;
+        }
+
+        .card2,
+        .card3 {
+            display: none;
+        }
+
+        .footer-content h3,
+        .footer-content h5 {
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .social-network i {
+            font-size: 30px;
+        }
+
+        /*mq mobile contact*/
+        .hero__navbar {
+            background-color: #202022;
+            width: 100vw;
+            height: 20vh;
+            color: $white-color;
+        }
+
+        .brand h2 {
+            display: flex;
+            font-size: 23px;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            font-size: 18px;
+            align-items: flex-end;
+
+            & a {
+                font-size: 15px;
+            }
+        }
+
+        .contact-headings h2 {
+            font-size: 33px;
+        }
+
+        .container-contact img {
+            display: none;
+        }
+
+        .contact-form .form input {
+            font-size: 20px;
+        }
+
+        .contact-form .form textarea {
+            font-size: 15px;
+        }
+
+        .contact-form .form button {
+            font-size: 11px;
+        }
+
+        .contact-form .form {
+            width: 90%;
+        }
+
+        .contact-form h4 {
+            font-size: 20px;
+        }
+
+        /*mq mobile technology*/
+        .wrapper__technology {
+            background-color: #28282B;
+            width: 100vw;
+            color: $white-color;
+        }
+
+        .brand h2 {
+            display: flex;
+            font-size: 23px;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            font-size: 18px;
+            align-items: flex-end;
+
+            & a {
+                font-size: 15px;
+            }
+        }
+
+        .portfolio-headings h2 {
+            font-size: 30px;
+        }
+
+        .technology__content {
+            display: block;
+        }
+
+        .technology__content div {
+            margin-top: 3rem;
         }
     }
 
-    .portfolio .container {
-        margin: 0 auto;
+    /*mq tablet index*/
+    @include tablet(md) {
+        .main {
+            display: flex;
+            text-align: center;
+
+            & img {
+                display: none;
+            }
+        }
+
+        .brand h2 {
+            display: flex;
+            font-size: 25px;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            font-size: 18px;
+            align-items: flex-end;
+        }
+
+        .info-content h1 {
+            font-size: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .info-content h2 {
+            margin: 10px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .staart {
+            justify-content: center;
+            margin: 20px;
+            display: flex;
+            text-decoration: none;
+        }
+
+        .footer {
+            height: 232px;
+            font-size: 20px;
+        }
+
+        /*mq tablet about-me*/
+        .wrapper__about-me {
+            background-color: #202022;
+            width: 100vw;
+            height: 100vh;
+            color: $white-color;
+        }
+
+        .about-info h2 {
+            font-size: 28px;
+        }
+
+        .footer-content h3,
+        .footer-content h5 {
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .social-network i {
+            font-size: 25px;
+        }
+
+        /* mq tablet portfolio */
+        .hero__navbar-portfolio {
+            background-color: #28282B;
+            width: 100vw;
+            color: $white-color;
+        }
+
+        .about-info h2 {
+            font-size: 28px;
+        }
+
+        .portfolio-headings h2 {
+            font-size: 30px;
+        }
+
+        .footer-content h3,
+        .footer-content h5 {
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .social-network i {
+            font-size: 25px;
+        }
+
+        /* mq tablet contact */
+        .hero__navbar {
+            background-color: #202022;
+            width: 100vw;
+            color: $white-color;
+        }
+
+        .contact-section {
+            width: 100vw;
+        }
+
+        .contact-headings h2 {
+            font-size: 30px;
+        }
+
+        .container-contact img {
+            display: none;
+        }
+
+        .contact-form h4 {
+            font-size: 25px;
+        }
+
+        .about-info h2 {
+            font-size: 28px;
+        }
+
+        .portfolio-headings h2 {
+            font-size: 30px;
+        }
+
+        .footer-content h3,
+        .footer-content h5 {
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .social-network i {
+            font-size: 25px;
+        }
+
+        /* mq tablet technology */
+        .wrapper__technology {
+            width: 100vw;
+        }
+
+        .portfolio-headings h2 {
+            font-size: 28px;
+        }
+    }
+
+    /* mq desktop */
+    @include desktop (lg) {
+        .contactBox {
+            grid-template-columns: 1fr;
+        }
+
+        .contactBox .left {
+            height: 220px;
+        }
+    }
+
+    /* css bootstrap INDEX*/
+    .bodyyy {
+        background-color: #202022;
+        margin-top: 100px;
+    }
+
+    .banner-image {
+        background-image: url(../imgs/background.png);
+        background-size: cover;
+
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+    @keyframes blinkCursor {
+
+        from,
+        to {
+            border-color: transparent;
+        }
+
+        50% {
+            border-color: $primary-color;
+        }
+    }
+
+    .color {
         display: flex;
         justify-content: center;
-        width: 90%;
-    }
+        -webkit-box-reflect: below 20px linear-gradient(transparent, #0002);
 
-    .card2,
-    .card3 {
-        display: none;
-    }
-
-    .footer-content h3,
-    .footer-content h5 {
-        font-size: 15px;
-        text-align: center;
-    }
-
-    .social-network i {
-        font-size: 30px;
-    }
-
-    /*mq mobile contact*/
-    .hero__navbar {
-        background-color: #202022;
-        width: 100vw;
-        height: 20vh;
-        color: $white-color;
-    }
-
-    .brand h2 {
-        display: flex;
-        font-size: 23px;
-    }
-
-    .menu {
-        display: flex;
-        flex-direction: column;
-        font-size: 18px;
-        align-items: flex-end;
-
-        & a {
-            font-size: 15px;
+        & h2 {
+            color: $primary-color;
+            letter-spacing: 0.15rem;
+            font-size: 25px;
+            overflow: hidden;
+            border-right: 0.15rem solid $primary-color;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: 0.15rem;
+            animation:
+                typing 3.5s steps(30, end),
+                blinkCursor 0.75s step-end infinite;
         }
     }
 
-    .contact-headings h2 {
-        font-size: 33px;
-    }
-
-    .container-contact img {
-        display: none;
-    }
-
-    .contact-form .form input {
-        font-size: 20px;
-    }
-
-    .contact-form .form textarea {
-        font-size: 15px;
-    }
-
-    .contact-form .form button {
-        font-size: 11px;
-    }
-
-    .contact-form .form {
-        width: 90%;
-    }
-
-    .contact-form h4 {
-        font-size: 20px;
-    }
-
-    /*mq mobile technology*/
-    .wrapper__technology {
-        background-color: #28282B;
-        width: 100vw;
+    .mainn {
         color: $white-color;
     }
 
-    .brand h2 {
-        display: flex;
-        font-size: 23px;
-    }
+    .p1 {
+        margin: 20px;
+        border-radius: 10px;
+        transition: all 300ms ease-in-out;
 
-    .menu {
-        display: flex;
-        flex-direction: column;
-        font-size: 18px;
-        align-items: flex-end;
-
-        & a {
-            font-size: 15px;
+        &:hover {
+            box-shadow: 0px 8px 30px $primary-color;
         }
     }
 
-    .portfolio-headings h2 {
-        font-size: 30px;
+    .p2 {
+        margin: 20px;
+        border-radius: 10px;
+        transition: all 300ms ease-in-out;
+
+        &:hover {
+            box-shadow: 0px 8px 30px $primary-color;
+        }
     }
 
-    .technology__content {
+    .p3 {
+        margin: 20px;
+        border-radius: 10px;
+        transition: all 300ms ease-in-out;
+
+        &:hover {
+            box-shadow: 0px 8px 30px $primary-color;
+        }
+    }
+
+    .page-link {
+        color: #202022 !important;
+        background: #549676;
+        border-color: #202022;
+    }
+
+    .container h2 {
+        color: white;
+    }
+
+    .contact-me {
+        background-image: url(../imgs/background.png);
+    }
+
+    /* navbar menu */
+    .nav-link {
+        margin-right: 30px;
+
+        &:hover {
+            border-top: $primary-color solid 2px;
+            border-bottom: $primary-color solid 2px;
+        }
+    }
+
+    /* navbar toggler */
+    .navbar-toggler {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        transition: .5s ease-in-out;
+
+        & span {
+            margin: 0;
+            padding: 0;
+        }
+
+        &:active {
+            outline: none;
+            box-shadow: none;
+            border: 0;
+        }
+
+        &:focus {
+            outline: none;
+            box-shadow: none;
+            border: 0;
+        }
+    }
+
+    .toggler-icon {
         display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: #d3531a;
+        border-radius: 1px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
     }
 
-    .technology__content div {
-        margin-top: 3rem;
+    .navbar-toggler-icon:focus {
+        outline: none;
+        box-shadow: none;
+        border: 0;
     }
-}
 
-/*mq tablet index*/
-@include tablet(md) {
-    .main {
+    .middle-bar {
+        margin-top: 0px;
+    }
+
+    /* click navbar */
+    .navbar-toggler .top-bar {
+        margin-top: 0px;
+        transform: rotate(135deg);
+    }
+
+    .navbar-toggler .middle-bar {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+
+    .navbar-toggler .bottom-bar {
+        margin-top: 0px;
+        transform: rotate(-135deg);
+    }
+
+    /* navbar collapsed */
+    .navbar-toggler.collapsed .top-bar {
+        margin-top: -20px;
+        transform: rotate(0deg);
+    }
+
+    .navbar-toggler.collapsed .middle-bar {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+
+    .navbar-toggler.collapsed .bottom-bar {
+        margin-top: 20px;
+        transform: rotate(0deg);
+    }
+
+    /* color 3 lines */
+    .navbar-toggler.collapsed .toggler-icon {
+        background: linear-gradient(263deg, rgba(2, 0, 36, 100) 0%, rgba(100, 244, 172, 100) 100%);
+    }
+
+    /*css technologies*/
+    .wrapper-i {
+        margin-top: 200px;
         display: flex;
-        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
 
-        & img {
-            display: none;
+    .wrapper-i .button-i {
+        height: 60px;
+        width: 60px;
+        margin: 0 5px;
+        overflow: hidden;
+        background: $primary-color;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-out;
+
+        &:hover {
+            width: 200px;
+        }
+
+        & span {
+            color: #202022;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 60px;
+            margin-left: 10px;
+        }
+
+        & .icon {
+            display: inline-block;
+            height: 60px;
+            width: 60px;
+            border-radius: 50px;
+            box-sizing: border-box;
+            line-height: 60px;
+            text-align: center;
+
+            & i {
+                font-size: 35px;
+                line-height: 60px;
+            }
         }
     }
 
-    .brand h2 {
-        display: flex;
-        font-size: 25px;
+    .footer__tec {
+        margin-top: 550px;
     }
 
-    .menu {
-        display: flex;
-        flex-direction: column;
-        font-size: 18px;
-        align-items: flex-end;
+    /* css bootstrap CONTACT*/
+    .body-contact {
+        width: 100%;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 20px 0;
+        background: url(../imgs/background.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        backdrop-filter: blur(5px);
+        font-family: 'Roboto';
     }
 
-    .info-content h1 {
-        font-size: 20px;
-        margin: 10px;
-        text-align: center;
-    }
-
-    .info-content h2 {
-        margin: 10px;
-        text-align: center;
-        font-size: 20px;
-    }
-
-    .staart {
-        justify-content: center;
-        margin: 20px;
-        display: flex;
-        text-decoration: none;
-    }
-
-    .footer {
-        height: 232px;
-        font-size: 20px;
-    }
-
-    /*mq tablet about-me*/
-    .wrapper__about-me {
-        background-color: #202022;
-        width: 100vw;
-        height: 100vh;
-        color: $white-color;
-    }
-
-    .about-info h2 {
-        font-size: 28px;
-    }
-
-    .footer-content h3,
-    .footer-content h5 {
-        font-size: 15px;
-        text-align: center;
-    }
-
-    .social-network i {
-        font-size: 25px;
-    }
-
-    /* mq tablet portfolio */
-    .hero__navbar-portfolio {
-        background-color: #28282B;
-        width: 100vw;
-        color: $white-color;
-    }
-
-    .about-info h2 {
-        font-size: 28px;
-    }
-
-    .portfolio-headings h2 {
-        font-size: 30px;
-    }
-
-    .footer-content h3,
-    .footer-content h5 {
-        font-size: 15px;
-        text-align: center;
-    }
-
-    .social-network i {
-        font-size: 25px;
-    }
-
-    /* mq tablet contact */
-    .hero__navbar {
-        background-color: #202022;
-        width: 100vw;
-        color: $white-color;
-    }
-
-    .contact-section {
-        width: 100vw;
-    }
-
-    .contact-headings h2 {
-        font-size: 30px;
-    }
-
-    .container-contact img {
-        display: none;
-    }
-
-    .contact-form h4 {
-        font-size: 25px;
-    }
-
-    .about-info h2 {
-        font-size: 28px;
-    }
-
-    .portfolio-headings h2 {
-        font-size: 30px;
-    }
-
-    .footer-content h3,
-    .footer-content h5 {
-        font-size: 15px;
-        text-align: center;
-    }
-
-    .social-network i {
-        font-size: 25px;
-    }
-
-    /* mq tablet technology */
-    .wrapper__technology {
-        width: 100vw;
-    }
-
-    .portfolio-headings h2 {
-        font-size: 28px;
-    }
-}
-
-/* mq desktop */
-@include desktop (lg) {
     .contactBox {
-        grid-template-columns: 1fr;
+        width: 80%;
+        max-height: 800px;
+        background: transparent;
+        box-shadow: 5px 20px 25px rgba(0, 0, 0, 0.5);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: 80px;
     }
 
     .contactBox .left {
-        height: 220px;
-    }
-}
-
-/* css bootstrap INDEX*/
-.bodyyy {
-    background-color: #202022;
-    margin-top: 100px;
-}
-
-.banner-image {
-    background-image: url(../imgs/background.png);
-    background-size: cover;
-    
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-
-    to {
         width: 100%;
-    }
-}
-
-@keyframes blinkCursor {
-
-    from,
-    to {
-        border-color: transparent;
-    }
-
-    50% {
-        border-color: $primary-color;
-    }
-}
-
-.color {
-    display: flex;
-    justify-content: center;
-    -webkit-box-reflect: below 20px linear-gradient(transparent, #0002);
-
-    & h2 {
-        color: $primary-color;
-        letter-spacing: 0.15rem;
-        font-size: 25px;
-        overflow: hidden;
-        border-right: 0.15rem solid $primary-color;
-        white-space: nowrap;
-        margin: 0 auto;
-        letter-spacing: 0.15rem;
-        animation:
-            typing 3.5s steps(30, end),
-            blinkCursor 0.75s step-end infinite;
-    }
-}
-
-.mainn {
-    color: $white-color;
-}
-
-.p1 {
-    margin: 20px;
-    border-radius: 10px;
-    transition: all 300ms ease-in-out;
-    &:hover{
-        box-shadow: 0px 8px 30px $primary-color;
-    }
-}
-
-.p2 {
-    margin: 20px;
-    border-radius: 10px;
-    transition: all 300ms ease-in-out;
-    &:hover{
-        box-shadow: 0px 8px 30px $primary-color;
-    }
-}
-
-.p3 {
-    margin: 20px;
-    border-radius: 10px;
-    transition: all 300ms ease-in-out;
-    &:hover{
-        box-shadow: 0px 8px 30px $primary-color;
-    }
-}
-.page-link{
-    color: #202022 !important;
-    background: #549676;
-    border-color: #202022;
-}
-
-.container h2{
-    color: white;
-}
-
-.contact-me{
-    background-image: url(../imgs/background.png);
-}
-/* navbar menu */
-.nav-link{
-    margin-right: 30px;
-    &:hover{
-        border-top: $primary-color solid 2px;
-        border-bottom: $primary-color solid 2px; 
-    }
-}
-/* navbar toggler */
-.navbar-toggler{
-    width: 20px;
-    height: 20px;
-    position: relative;
-    transition: .5s ease-in-out;
-    & span{
-        margin: 0;
-        padding: 0;
-    }
-    &:active{
-        outline: none;
-        box-shadow: none;
-        border: 0;
-    }
-    &:focus{
-        outline: none;
-        box-shadow: none;
-        border: 0;
-    }
-}
-.toggler-icon{
-    display: block;
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    background: #d3531a;
-    border-radius: 1px;
-    opacity: 1;
-    left: 0;
-    transform: rotate(0deg);
-    transition: .25s ease-in-out;
-}
-.navbar-toggler-icon:focus{
-    outline: none;
-    box-shadow: none;
-    border: 0;
-}
-.middle-bar{
-    margin-top: 0px;
-}
-/* click navbar */
-.navbar-toggler .top-bar{
-    margin-top: 0px;
-    transform: rotate(135deg);
-}
-
-.navbar-toggler .middle-bar{
-    opacity: 0;
-    filter: alpha(opacity=0);
-}
-
-.navbar-toggler .bottom-bar{
-    margin-top: 0px;
-    transform: rotate(-135deg);
-}
-
-/* navbar collapsed */
-.navbar-toggler.collapsed .top-bar{
-    margin-top: -20px;
-    transform: rotate(0deg);
-}
-
-.navbar-toggler.collapsed .middle-bar{
-    opacity: 1;
-    filter: alpha(opacity=100);
-}
-
-.navbar-toggler.collapsed .bottom-bar{
-    margin-top: 20px;
-    transform: rotate(0deg);
-}
-
-/* color 3 lines */
-.navbar-toggler.collapsed .toggler-icon{
-    background: linear-gradient( 263deg, rgba(2,0,36,100) 0%, rgba(100,244,172,100) 100% );
-}
-
-/*css technologies*/
-.wrapper-i{
-    margin-top: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.wrapper-i .button-i{
-    height: 60px;
-    width: 60px;
-    margin: 0 5px;
-    overflow: hidden;
-    background: $primary-color;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
-    transition: all 0.3s ease-out;
-    &:hover{
-        width: 200px;
-    }
-    & span{
-        color: #202022;
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 60px;
-        margin-left: 10px;
-    }
-    & .icon{
-        display: inline-block;
-        height: 60px;
-        width: 60px;
-        border-radius: 50px;
-        box-sizing: border-box;
-        line-height: 60px;
-        text-align: center;
-        & i{
-            font-size: 35px;
-            line-height: 60px;
-        }
-    }
-}
-
-.footer__tec{
-    margin-top: 550px;
-}
-
-/* css bootstrap CONTACT*/
-.body-contact{
-    width: 100%;
-    min-height: 100vh;
-    display: grid;
-    place-items: center;
-    padding: 20px 0;
-    background: url(../imgs/background.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    backdrop-filter: blur(5px);
-    font-family: 'Roboto';
-}
-
-.contactBox{
-    width: 80%;
-    max-height: 800px;
-    background: transparent;
-    box-shadow: 5px 20px 25px rgba(0,0,0,0.5);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-top: 80px;
-}
-
-.contactBox .left{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    & img{
-        width: 80%;
         height: 100%;
-        object-fit: cover;
-        background-color: transparent;
-        transition: all 308ms;
-        &:hover{
-            transform: scale(0.9);
-            box-shadow: 2px 2px 15px 2px $primary-color;
+        overflow: hidden;
+
+        & img {
+            width: 80%;
+            height: 100%;
+            object-fit: cover;
+            background-color: transparent;
+            transition: all 308ms;
+
+            &:hover {
+                transform: scale(0.9);
+                box-shadow: 2px 2px 15px 2px $primary-color;
+            }
         }
     }
-}
-.contactBox .right{
+
+    .contactBox .right {
         background-color: transparent;
         text-align: center;
         display: flex;
@@ -1066,9 +1087,11 @@ span {
         padding: 30px 35px;
         border-top: 3px solid $primary-color;
         border-bottom: 3px solid $primary-color;
-        & form{
+
+        & form {
             width: 100%;
-            & textarea{
+
+            & textarea {
                 width: 100%;
                 height: 100px;
                 padding: 10px;
@@ -1076,14 +1099,16 @@ span {
                 border: 2px solid $primary-color;
                 font-size: 17px;
                 letter-spacing: 1.5px;
-                &::placeholder{
+
+                &::placeholder {
                     font-size: 15px;
                     color: #202022;
                     text-transform: capitalize;
                     font-family: 'Roboto';
                 }
             }
-            & input{
+
+            & input {
                 display: block;
                 width: 100%;
                 margin: 10px 0;
@@ -1093,10 +1118,12 @@ span {
                 border: 2px solid $primary-color;
                 font-size: 17px;
                 letter-spacing: 1.5px;
-                &:hover[type="submit"]{
+
+                &:hover[type="submit"] {
                     box-shadow: 0px 2px 20px 2px $primary-color;
                 }
-                &[type="submit"]{
+
+                &[type="submit"] {
                     border: none;
                     font-size: 18px;
                     letter-spacing: 2px;
@@ -1105,7 +1132,8 @@ span {
                     background: $primary-color;
                     color: #202022;
                 }
-                &::placeholder{
+
+                &::placeholder {
                     font-size: 15px;
                     color: #202022;
                     text-transform: capitalize;
@@ -1113,12 +1141,14 @@ span {
                 }
             }
         }
-        & h2{
+
+        & h2 {
             font-size: 40px;
             margin-bottom: 20px;
             color: $primary-color;
             position: relative;
-            &::before{
+
+            &::before {
                 content: '';
                 position: absolute;
                 width: 100px;
