@@ -628,7 +628,7 @@ span {
 }
 
 /*mq tablet index*/
-@include mobile(md) {
+@include tablet(md) {
     .main {
         display: flex;
         text-align: center;
