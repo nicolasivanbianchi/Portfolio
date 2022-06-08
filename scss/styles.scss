@@ -195,6 +195,17 @@ span {
     }
 }
 
+.works{
+    background-color: #202022;
+    padding: 5em;
+    }
+
+.imgs{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
 .portfolio .container {
     width: 60vw;
     height: 60vh;
@@ -1022,11 +1033,6 @@ span {
             }
         }
     }
-
-    .footer__tec {
-        margin-top: 550px;
-    }
-
     /* css bootstrap CONTACT*/
     .body-contact {
         width: 100%;

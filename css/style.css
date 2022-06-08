@@ -148,6 +148,15 @@ span {
   .portfolio-headings h2 {
     font-size: 2.5em; }
 
+.works {
+  background-color: #202022;
+  padding: 5em; }
+
+.imgs {
+  display: flex;
+  justify-content: center;
+  gap: 10px; }
+
 .portfolio .container {
   width: 60vw;
   height: 60vh;
@@ -709,9 +718,6 @@ span {
     .wrapper-i .button-i .icon i {
       font-size: 35px;
       line-height: 60px; }
-
-.footer__tec {
-  margin-top: 550px; }
 
 /* css bootstrap CONTACT*/
 .body-contact {
