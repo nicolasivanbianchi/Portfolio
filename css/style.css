@@ -13,35 +13,6 @@
 html {
   overflow-x: hidden; }
 
-.wrapper {
-  width: 100vw;
-  height: 97vh;
-  background-image: url(../imgs/background.png);
-  color: #fff; }
-  .wrapper__technology {
-    background-color: #28282B;
-    color: #fff; }
-
-.technology__content {
-  height: 60vh;
-  background-color: #28282B;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .technology__content div {
-    width: 11em;
-    height: 7em;
-    margin: 0 10px;
-    padding: 0 5px; }
-    .technology__content div img {
-      width: 100%;
-      height: 100%;
-      transition: all 308ms;
-      position: relative; }
-      .technology__content div img:hover {
-        transform: scale(1.3); }
-
 .hero__navbar {
   background-color: #202022;
   color: #fff; }
@@ -273,9 +244,9 @@ span {
   color: #fff; }
   .footer-content {
     text-align: center; }
-    .footer-content .p1 {
+    .footer-content .footer-content__p1 {
       font-size: 1em; }
-    .footer-content .p2 {
+    .footer-content .footer-content__p2 {
       font-size: 1.5em; }
 
 .social-network {
@@ -323,9 +294,6 @@ span {
     margin: 20px;
     display: flex;
     text-decoration: none; }
-  .footer {
-    height: 232px;
-    font-size: 12px; }
   /* mq mobile about me */
   .wrapper__about-me {
     background-color: #202022;
@@ -352,8 +320,8 @@ span {
     justify-content: center; }
     .about img {
       display: none; }
-  .footer-content .p1,
-  .footer-content .p2 {
+  .footer-content .footer-content__p1,
+  .footer-content .footer-content__p2 {
     font-size: 15px;
     text-align: center; }
   .social-network i {
@@ -381,10 +349,6 @@ span {
   .card2,
   .card3 {
     display: none; }
-  .footer-content .p1,
-  .footer-content .p2 {
-    font-size: 15px;
-    text-align: center; }
   .social-network i {
     font-size: 30px; }
   /*mq mobile contact*/
@@ -467,9 +431,6 @@ span {
     margin: 20px;
     display: flex;
     text-decoration: none; }
-  .footer {
-    height: 232px;
-    font-size: 20px; }
   /*mq tablet about-me*/
   .wrapper__about-me {
     background-color: #202022;
@@ -478,10 +439,6 @@ span {
     color: #fff; }
   .about-info h2 {
     font-size: 28px; }
-  .footer-content .p1,
-  .footer-content .p2 {
-    font-size: 15px;
-    text-align: center; }
   .social-network i {
     font-size: 25px; }
   /* mq tablet portfolio */
@@ -493,10 +450,6 @@ span {
     font-size: 28px; }
   .portfolio-headings h2 {
     font-size: 30px; }
-  .footer-content .p1,
-  .footer-content .p2 {
-    font-size: 15px;
-    text-align: center; }
   .social-network i {
     font-size: 25px; }
   /* mq tablet contact */
@@ -516,10 +469,6 @@ span {
     font-size: 28px; }
   .portfolio-headings h2 {
     font-size: 30px; }
-  .footer-content .p1,
-  .footer-content .p2 {
-    font-size: 15px;
-    text-align: center; }
   .social-network i {
     font-size: 25px; }
   /* mq tablet technology */

@@ -14,45 +14,6 @@ html {
     overflow-x: hidden;
 }
 
-.wrapper {
-    width: 100vw;
-    height: 97vh;
-    background-image: url(../imgs/background.png);
-    color: $white-color;
-
-    &__technology {
-        background-color: #28282B;
-        color: #fff;
-    }
-}
-
-.technology__content {
-    height: 60vh;
-    background-color: #28282B;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    & div {
-        width: 11em;
-        height: 7em;
-        margin: 0 10px;
-        padding: 0 5px;
-
-        & img {
-            width: 100%;
-            height: 100%;
-            transition: all 308ms;
-            position: relative;
-
-            &:hover {
-                transform: scale(1.30);
-            }
-        }
-    }
-}
-
 .hero__navbar {
     background-color: #202022;
     color: $white-color;
@@ -362,11 +323,11 @@ span {
         &-content {
             text-align: center;
 
-            & .p1 {
+            & .footer-content__p1 {
                 font-size: 1em;
             }
 
-            & .p2 {
+            & .footer-content__p2 {
                 font-size: 1.5em;
             }
         }
@@ -443,12 +404,6 @@ span {
             display: flex;
             text-decoration: none;
         }
-
-        .footer {
-            height: 232px;
-            font-size: 12px;
-        }
-
         /* mq mobile about me */
         .wrapper__about-me {
             background-color: #202022;
@@ -491,8 +446,8 @@ span {
             }
         }
 
-        .footer-content .p1,
-        .footer-content .p2 {
+        .footer-content .footer-content__p1,
+        .footer-content .footer-content__p2 {
             font-size: 15px;
             text-align: center;
         }
@@ -534,12 +489,6 @@ span {
         .card2,
         .card3 {
             display: none;
-        }
-
-        .footer-content .p1,
-        .footer-content .p2 {
-            font-size: 15px;
-            text-align: center;
         }
 
         .social-network i {
@@ -676,11 +625,6 @@ span {
             text-decoration: none;
         }
 
-        .footer {
-            height: 232px;
-            font-size: 20px;
-        }
-
         /*mq tablet about-me*/
         .wrapper__about-me {
             background-color: #202022;
@@ -691,12 +635,6 @@ span {
 
         .about-info h2 {
             font-size: 28px;
-        }
-
-        .footer-content .p1,
-        .footer-content .p2 {
-            font-size: 15px;
-            text-align: center;
         }
 
         .social-network i {
@@ -716,12 +654,6 @@ span {
 
         .portfolio-headings h2 {
             font-size: 30px;
-        }
-
-        .footer-content .p1,
-        .footer-content .p2 {
-            font-size: 15px;
-            text-align: center;
         }
 
         .social-network i {
@@ -757,12 +689,6 @@ span {
 
         .portfolio-headings h2 {
             font-size: 30px;
-        }
-
-        .footer-content .p1,
-        .footer-content .p2 {
-            font-size: 15px;
-            text-align: center;
         }
 
         .social-network i {
