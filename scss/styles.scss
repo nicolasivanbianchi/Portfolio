@@ -14,118 +14,12 @@ html {
     overflow-x: hidden;
 }
 
-.hero__navbar {
-    background-color: #202022;
-    color: $white-color;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 2em;
-}
-
-.brand {
-    margin-top: -7px;
-
-    & span {
-        color: $brand-color;
-    }
-}
-
-.menu {
-    display: flex;
-    width: 50%;
-    justify-content: space-around;
-
-    & .active {
-        color: $primary-color;
-    }
-
-    & li {
-        list-style: none;
-
-        & a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 20px;
-
-            &:hover {
-                background-color: #64F4AC;
-                color: rgb(42, 68, 42);
-                transition: ease-in .4s;
-            }
-        }
-    }
-}
-
-.main {
-    margin: 0 auto;
-    width: 70vw;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    gap: 5em;
-}
-
-.info-content {
-    display: block;
-    margin: auto;
-}
-
 h1 {
     font-size: 2em;
 }
 
 span {
     color: $primary-color;
-}
-
-.start {
-    color: #2D2E32;
-    padding: 10px 20px;
-    background-color: $primary-color;
-    border: none;
-    border-radius: 20px;
-    margin-top: 10px;
-    cursor: pointer;
-
-    &:hover {
-        box-shadow: 1px 1px 20px 1px $primary-color;
-        color: #2D2E32;
-    }
-}
-
-.main img {
-    border-bottom: 7px solid $primary-color;
-}
-
-.about {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    width: 100vw;
-    align-items: center;
-    background-color: #202022;
-
-    & p {
-        margin-bottom: 1em;
-        color: #fff;
-    }
-
-    & img {
-        width: 80%;
-        grid-column: 1/5;
-    }
-}
-
-.about-info {
-    grid-column: 5/10;
-    padding: 3em;
-
-    & h2 {
-        font-size: 2em;
-        color: #fff;
-    }
 }
 
 .divider {
@@ -136,30 +30,19 @@ span {
     margin-bottom: 2em;
 }
 
-.hero__navbar-portfolio {
-    background-color: #28282B;
-    color: $white-color;
-}
-
 .portfolio {
     width: 100vw;
     color: $white-color;
     background-color: #28282B;
 }
 
-.portfolio-headings {
-    width: 100vw;
-    padding: 5em;
-
-    & h2 {
-        font-size: 2.5em;
-    }
-}
-
 .works{
     background-color: #202022;
     padding: 5em;
+    h2{
+        color: $white-color;
     }
+}
 
 .imgs{
     display: flex;
@@ -173,106 +56,6 @@ span {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-}
-
-.card {
-    width: 300px;
-    height: 350px;
-    color: #fff;
-    background-color: #549676;
-    margin: 1em;
-
-    &__projects-links {
-        display: flex;
-        justify-content: space-evenly;
-
-        & a {
-            color: $white-color;
-            text-decoration: none;
-
-            & i {
-                font-size: 1.5em;
-            }
-        }
-    }
-
-    &__img {
-        width: 100%;
-        height: 150px;
-        background-image: url(../imgs/2-original.png);
-        background-size: cover;
-    }
-
-    &__title {
-        padding: 20px;
-    }
-
-    &__title-html {
-        text-align: center;
-        padding: 5em;
-        background-color: #28282B;
-    }
-}
-
-.button-content {
-    display: flex;
-    justify-content: center;
-    margin: 1em;
-}
-
-.card .project-details {
-    margin: 1em;
-    margin: 0 auto;
-    width: 70%;
-
-    & a {
-        text-decoration: none;
-        color: #2D2E32;
-        text-transform: uppercase;
-    }
-}
-
-.project-details-content {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 1em;
-}
-
-.project-details-button a {
-    text-decoration: none;
-    color: #2D2E32;
-}
-
-.contact-form {
-    margin-left: 10%;
-}
-
-.contact-section {
-    background-color: #202022;
-    color: $white-color;
-}
-
-.contact-headings {
-    width: 100vw;
-    padding: 5em;
-
-    & h2 {
-        font-size: 3em;
-        color: $white-color;
-    }
-}
-
-.container-contact {
-    display: flex;
-    padding: 3em;
-    margin: 0 auto;
-
-    & img {
-        width: 700px;
-        height: 800px;
-        margin: 0px;
-    }
 }
 
 .form {
@@ -360,92 +143,12 @@ span {
         }
     }
 
-    /* mq mobile index */
+    /* mq mobile */
     @include mobile(sm) {
         body {
             width: 480px;
         }
-
-        .main img {
-            display: none;
-        }
-
-        .brand h2 {
-            display: flex;
-            font-size: 23px;
-        }
-
-        .menu {
-            display: flex;
-            flex-direction: column;
-            font-size: 18px;
-            align-items: flex-end;
-
-            & a {
-                font-size: 15px;
-            }
-        }
-
-        .info-content h1 {
-            font-size: 30px;
-            margin: 10px;
-            text-align: center;
-        }
-
-        .info-content h2 {
-            margin: 10px;
-            text-align: center;
-            font-size: 20px;
-        }
-
-        .staart {
-            justify-content: center;
-            margin: 20px;
-            display: flex;
-            text-decoration: none;
-        }
-        /* mq mobile about me */
-        .wrapper__about-me {
-            background-color: #202022;
-            width: 100vw;
-            height: 100vh;
-            color: $white-color;
-        }
-
-        .brand h2 {
-            display: flex;
-            font-size: 23px;
-        }
-
-        .menu {
-            display: flex;
-            flex-direction: column;
-            font-size: 18px;
-            align-items: flex-end;
-
-            & a {
-                font-size: 15px;
-            }
-        }
-
-        .about-info h2 {
-            font-size: 35px;
-        }
-
-        .about-info p {
-            text-align: center;
-            font-size: 15px;
-        }
-
-        .about {
-            display: flex;
-            justify-content: center;
-
-            & img {
-                display: none;
-            }
-        }
-
+        
         .footer-content .footer-content__p1,
         .footer-content .footer-content__p2 {
             font-size: 15px;
@@ -456,29 +159,6 @@ span {
             font-size: 30px;
         }
 
-        /* mq mobile portfolio */
-        .hero__navbar-portfolio {
-            background-color: #28282B;
-            width: 100vw;
-            height: 20vh;
-            color: $white-color;
-        }
-
-        .brand h2 {
-            display: flex;
-            font-size: 23px;
-        }
-
-        .menu {
-            display: flex;
-            flex-direction: column;
-            font-size: 18px;
-
-            & a {
-                font-size: 15px;
-            }
-        }
-
         .portfolio .container {
             margin: 0 auto;
             display: flex;
@@ -486,216 +166,25 @@ span {
             width: 90%;
         }
 
-        .card2,
-        .card3 {
-            display: none;
-        }
-
-        .social-network i {
-            font-size: 30px;
-        }
-
-        /*mq mobile contact*/
-        .hero__navbar {
-            background-color: #202022;
-            width: 100vw;
-            height: 20vh;
-            color: $white-color;
-        }
-
-        .brand h2 {
-            display: flex;
-            font-size: 23px;
-        }
-
-        .menu {
-            display: flex;
-            flex-direction: column;
-            font-size: 18px;
-            align-items: flex-end;
-
-            & a {
-                font-size: 15px;
-            }
-        }
-
-        .contact-headings h2 {
-            font-size: 33px;
-        }
-
-        .container-contact img {
-            display: none;
-        }
-
-        .contact-form .form input {
+        .form input {
             font-size: 20px;
         }
 
-        .contact-form .form textarea {
+       .form textarea {
             font-size: 15px;
         }
 
-        .contact-form .form button {
+        .form button {
             font-size: 11px;
         }
 
-        .contact-form .form {
+        .form {
             width: 90%;
-        }
-
-        .contact-form h4 {
-            font-size: 20px;
-        }
-
-        /*mq mobile technology*/
-        .wrapper__technology {
-            background-color: #28282B;
-            width: 100vw;
-            color: $white-color;
-        }
-
-        .brand h2 {
-            display: flex;
-            font-size: 23px;
-        }
-
-        .menu {
-            display: flex;
-            flex-direction: column;
-            font-size: 18px;
-            align-items: flex-end;
-
-            & a {
-                font-size: 15px;
-            }
-        }
-
-        .portfolio-headings h2 {
-            font-size: 30px;
-        }
-
-        .technology__content {
-            display: block;
-        }
-
-        .technology__content div {
-            margin-top: 3rem;
         }
     }
 
-    /*mq tablet index*/
+    /* mq tablet */
     @include tablet(md) {
-        .main {
-            display: flex;
-            text-align: center;
-
-            & img {
-                display: none;
-            }
-        }
-
-        .brand h2 {
-            display: flex;
-            font-size: 25px;
-        }
-
-        .menu {
-            display: flex;
-            flex-direction: column;
-            font-size: 18px;
-            align-items: flex-end;
-        }
-
-        .info-content h1 {
-            font-size: 20px;
-            margin: 10px;
-            text-align: center;
-        }
-
-        .info-content h2 {
-            margin: 10px;
-            text-align: center;
-            font-size: 20px;
-        }
-
-        .staart {
-            justify-content: center;
-            margin: 20px;
-            display: flex;
-            text-decoration: none;
-        }
-
-        /*mq tablet about-me*/
-        .wrapper__about-me {
-            background-color: #202022;
-            width: 100vw;
-            height: 100vh;
-            color: $white-color;
-        }
-
-        .about-info h2 {
-            font-size: 28px;
-        }
-
-        .social-network i {
-            font-size: 25px;
-        }
-
-        /* mq tablet portfolio */
-        .hero__navbar-portfolio {
-            background-color: #28282B;
-            width: 100vw;
-            color: $white-color;
-        }
-
-        .about-info h2 {
-            font-size: 28px;
-        }
-
-        .portfolio-headings h2 {
-            font-size: 30px;
-        }
-
-        .social-network i {
-            font-size: 25px;
-        }
-
-        /* mq tablet contact */
-        .hero__navbar {
-            background-color: #202022;
-            width: 100vw;
-            color: $white-color;
-        }
-
-        .contact-section {
-            width: 100vw;
-        }
-
-        .contact-headings h2 {
-            font-size: 30px;
-        }
-
-        .container-contact img {
-            display: none;
-        }
-
-        .contact-form h4 {
-            font-size: 25px;
-        }
-
-        .about-info h2 {
-            font-size: 28px;
-        }
-
-        .portfolio-headings h2 {
-            font-size: 30px;
-        }
-
-        .social-network i {
-            font-size: 25px;
-        }
-
-        /* mq tablet technology */
         .wrapper__technology {
             width: 100vw;
         }
@@ -716,7 +205,6 @@ span {
         }
     }
 
-    /* css bootstrap INDEX*/
     .bodyyy {
         background-color: #202022;
         margin-top: 100px;
@@ -751,7 +239,7 @@ span {
     }
 
     .color {
-        display: flex;
+        display: inline-block;
         justify-content: center;
         -webkit-box-reflect: below 20px linear-gradient(transparent, #0002);
 
@@ -804,20 +292,10 @@ span {
         }
     }
 
-    .page-link {
-        color: #202022 !important;
-        background: #549676;
-        border-color: #202022;
-    }
-
     .container h1 {
         color: white;
     }
-
-    .contact-me {
-        background-image: url(../imgs/background.png);
-    }
-
+    
     /* navbar menu */
     .nav-link {
         margin-right: 30px;
@@ -913,7 +391,7 @@ span {
         background: linear-gradient(263deg, rgba(2, 0, 36, 100) 0%, rgba(100, 244, 172, 100) 100%);
     }
 
-    /*css technologies*/
+    /*STYLES TECHNOLOGY*/
     .wrapper-i {
         margin-top: 200px;
         display: flex;
@@ -959,7 +437,7 @@ span {
             }
         }
     }
-    /* css bootstrap CONTACT*/
+    /* STYLES CONTACT*/
     .body-contact {
         width: 100%;
         min-height: 100vh;
