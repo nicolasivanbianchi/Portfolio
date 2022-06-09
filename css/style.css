@@ -41,6 +41,9 @@ span {
   display: flex;
   justify-content: center;
   gap: 10px; }
+  .imgs img {
+    width: 100%;
+    height: auto; }
 
 .portfolio .container {
   width: 60vw;
@@ -107,7 +110,7 @@ span {
         color: white; }
 
 /* mq mobile */
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 480px) {
   body {
     width: 480px; }
   .footer-content .footer-content__p1,
@@ -128,17 +131,21 @@ span {
   .form button {
     font-size: 11px; }
   .form {
-    width: 90%; } }
+    width: 90%; }
+  .left img {
+    display: none; } }
 
 /* mq tablet */
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 1024px) {
   .wrapper__technology {
     width: 100vw; }
   .portfolio-headings h2 {
-    font-size: 28px; } }
+    font-size: 28px; }
+  .left img {
+    display: none; } }
 
 /* mq desktop */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1680px) {
   .contactBox {
     grid-template-columns: 1fr; }
   .contactBox .left {

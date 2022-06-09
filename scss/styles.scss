@@ -48,6 +48,10 @@ span {
     display: flex;
     justify-content: center;
     gap: 10px;
+    img{
+        width: 100%;
+        height: auto;
+    }
 }
 
 .portfolio .container {
@@ -181,6 +185,10 @@ span {
         .form {
             width: 90%;
         }
+
+        .left img{
+            display: none;
+        }
     }
 
     /* mq tablet */
@@ -191,6 +199,9 @@ span {
 
         .portfolio-headings h2 {
             font-size: 28px;
+        }
+        .left img{
+            display: none;
         }
     }
 
