@@ -362,11 +362,11 @@ span {
         &-content {
             text-align: center;
 
-            & h3 {
+            & .p1 {
                 font-size: 1em;
             }
 
-            & h5 {
+            & .p2 {
                 font-size: 1.5em;
             }
         }
@@ -491,8 +491,8 @@ span {
             }
         }
 
-        .footer-content h3,
-        .footer-content h5 {
+        .footer-content .p1,
+        .footer-content .p2 {
             font-size: 15px;
             text-align: center;
         }
@@ -536,8 +536,8 @@ span {
             display: none;
         }
 
-        .footer-content h3,
-        .footer-content h5 {
+        .footer-content .p1,
+        .footer-content .p2 {
             font-size: 15px;
             text-align: center;
         }
@@ -693,8 +693,8 @@ span {
             font-size: 28px;
         }
 
-        .footer-content h3,
-        .footer-content h5 {
+        .footer-content .p1,
+        .footer-content .p2 {
             font-size: 15px;
             text-align: center;
         }
@@ -718,8 +718,8 @@ span {
             font-size: 30px;
         }
 
-        .footer-content h3,
-        .footer-content h5 {
+        .footer-content .p1,
+        .footer-content .p2 {
             font-size: 15px;
             text-align: center;
         }
@@ -759,8 +759,8 @@ span {
             font-size: 30px;
         }
 
-        .footer-content h3,
-        .footer-content h5 {
+        .footer-content .p1,
+        .footer-content .p2 {
             font-size: 15px;
             text-align: center;
         }
@@ -884,7 +884,7 @@ span {
         border-color: #202022;
     }
 
-    .container h2 {
+    .container h1 {
         color: white;
     }
 

@@ -273,9 +273,9 @@ span {
   color: #fff; }
   .footer-content {
     text-align: center; }
-    .footer-content h3 {
+    .footer-content .p1 {
       font-size: 1em; }
-    .footer-content h5 {
+    .footer-content .p2 {
       font-size: 1.5em; }
 
 .social-network {
@@ -352,8 +352,8 @@ span {
     justify-content: center; }
     .about img {
       display: none; }
-  .footer-content h3,
-  .footer-content h5 {
+  .footer-content .p1,
+  .footer-content .p2 {
     font-size: 15px;
     text-align: center; }
   .social-network i {
@@ -381,8 +381,8 @@ span {
   .card2,
   .card3 {
     display: none; }
-  .footer-content h3,
-  .footer-content h5 {
+  .footer-content .p1,
+  .footer-content .p2 {
     font-size: 15px;
     text-align: center; }
   .social-network i {
@@ -478,8 +478,8 @@ span {
     color: #fff; }
   .about-info h2 {
     font-size: 28px; }
-  .footer-content h3,
-  .footer-content h5 {
+  .footer-content .p1,
+  .footer-content .p2 {
     font-size: 15px;
     text-align: center; }
   .social-network i {
@@ -493,8 +493,8 @@ span {
     font-size: 28px; }
   .portfolio-headings h2 {
     font-size: 30px; }
-  .footer-content h3,
-  .footer-content h5 {
+  .footer-content .p1,
+  .footer-content .p2 {
     font-size: 15px;
     text-align: center; }
   .social-network i {
@@ -516,8 +516,8 @@ span {
     font-size: 28px; }
   .portfolio-headings h2 {
     font-size: 30px; }
-  .footer-content h3,
-  .footer-content h5 {
+  .footer-content .p1,
+  .footer-content .p2 {
     font-size: 15px;
     text-align: center; }
   .social-network i {
@@ -601,7 +601,7 @@ span {
   background: #549676;
   border-color: #202022; }
 
-.container h2 {
+.container h1 {
   color: white; }
 
 .contact-me {
