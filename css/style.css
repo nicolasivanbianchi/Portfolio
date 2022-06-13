@@ -13,6 +13,9 @@
 html {
   overflow-x: hidden; }
 
+body {
+  background-image: url(../imgs/background.png); }
+
 h1 {
   font-size: 2em; }
 
@@ -30,6 +33,35 @@ span {
   width: 100vw;
   color: #fff;
   background-color: #28282B; }
+
+.container__background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; }
+
+.bubbles {
+  position: relative;
+  display: flex; }
+  .bubbles span {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background: #51e6be;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px #46947f, 0 0 50px #51e6be, 0 0 100px #51e6be;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(240s / var(--i)); }
+    .bubbles span:nth-child(even) {
+      background: #64F4AC;
+      box-shadow: 0 0 0 8px gray, 0 0 50px #64F4AC, 0 0 100px #64F4AC; }
+
+@keyframes animate {
+  0% {
+    transform: translateY(100vh) scale(0); }
+  100% {
+    transform: translateY(-10px) scale(1); } }
 
 .works {
   background-color: #202022;
@@ -102,6 +134,19 @@ span {
     transition: all 300ms; }
     .social-network i:hover {
       transform: scale(1.3); }
+  .social-network .facebook:hover {
+    color: #4292FF; }
+  .social-network .twitter:hover {
+    color: #208bb2; }
+  .social-network .instagram:hover {
+    background: radial-gradient(circle at 33% 100%, #fed373 5%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+    border-radius: 30%; }
+  .social-network .linkedin:hover {
+    color: #0A66C2; }
+  .social-network .github:hover {
+    color: #fff; }
+  .social-network .whatsapp:hover {
+    color: #00E676; }
   .social-network li {
     font-size: 2em; }
     .social-network li a {
