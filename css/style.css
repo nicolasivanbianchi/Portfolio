@@ -63,12 +63,6 @@ span {
   100% {
     transform: translateY(-10px) scale(1); } }
 
-.works {
-  background-color: #202022;
-  padding: 5em; }
-  .works h2 {
-    color: #fff; }
-
 .imgs {
   display: flex;
   justify-content: center;
@@ -256,8 +250,8 @@ span {
   .p3:hover {
     box-shadow: 0px 8px 30px #64F4AC; }
 
-.container h1 {
-  color: white; }
+.container h1, .container h2 {
+  color: #fff; }
 
 /* navbar menu */
 .nav-link {
@@ -339,25 +333,27 @@ span {
   margin-top: 200px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  height: 50vh;
+  width: 100%; }
 
 .wrapper-i .button-i {
   height: 60px;
   width: 60px;
   margin: 0 5px;
   overflow: hidden;
-  background: #64F4AC;
+  background: #28282B;
   border-radius: 50px;
   cursor: pointer;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: #64F4AC 0px 0px 10px;
   transition: all 0.3s ease-out; }
   .wrapper-i .button-i:hover {
     width: 200px; }
   .wrapper-i .button-i span {
-    color: #202022;
+    color: #fff;
     font-size: 20px;
     font-weight: 500;
-    line-height: 60px;
+    line-height: 50px;
     margin-left: 10px; }
   .wrapper-i .button-i .icon {
     display: inline-block;
@@ -369,7 +365,8 @@ span {
     text-align: center; }
     .wrapper-i .button-i .icon i {
       font-size: 35px;
-      line-height: 60px; }
+      line-height: 60px;
+      color: #fff; }
 
 /* STYLES CONTACT*/
 .body-contact {

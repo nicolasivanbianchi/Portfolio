@@ -85,15 +85,6 @@ span {
 
 }
 
-.works {
-    background-color: #202022;
-    padding: 5em;
-
-    h2 {
-        color: $white-color;
-    }
-}
-
 .imgs {
     display: flex;
     justify-content: center;
@@ -380,8 +371,8 @@ span {
     }
 }
 
-.container h1 {
-    color: white;
+.container h1, .container h2{
+    color: $white-color;
 }
 
 /* navbar menu */
@@ -485,6 +476,8 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 50vh;
+    width: 100%;
 }
 
 .wrapper-i .button-i {
@@ -492,10 +485,10 @@ span {
     width: 60px;
     margin: 0 5px;
     overflow: hidden;
-    background: $primary-color;
+    background: #28282B;
     border-radius: 50px;
     cursor: pointer;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: $primary-color 0px 0px 10px;
     transition: all 0.3s ease-out;
 
     &:hover {
@@ -503,11 +496,11 @@ span {
     }
 
     & span {
-        color: #202022;
+        color: $white-color;
         font-size: 20px;
         font-weight: 500;
-        line-height: 60px;
-        margin-left: 10px;
+        line-height: 50px;
+        margin-left: 10px;     
     }
 
     & .icon {
@@ -522,6 +515,7 @@ span {
         & i {
             font-size: 35px;
             line-height: 60px;
+            color: $white-color;
         }
     }
 }
