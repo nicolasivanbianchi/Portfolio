@@ -345,10 +345,11 @@ span {
   background: #28282B;
   border-radius: 50px;
   cursor: pointer;
-  box-shadow: #64F4AC 0px 0px 10px;
+  box-shadow: #64F4AC 0px 0px 11px;
   transition: all 0.3s ease-out; }
   .wrapper-i .button-i:hover {
-    width: 200px; }
+    width: 200px;
+    box-shadow: #fff 0px 5px 11px; }
   .wrapper-i .button-i span {
     color: #fff;
     font-size: 20px;

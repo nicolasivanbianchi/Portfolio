@@ -488,11 +488,12 @@ span {
     background: #28282B;
     border-radius: 50px;
     cursor: pointer;
-    box-shadow: $primary-color 0px 0px 10px;
+    box-shadow: $primary-color 0px 0px 11px;
     transition: all 0.3s ease-out;
 
     &:hover {
         width: 200px;
+        box-shadow: $white-color 0px 5px 11px;
     }
 
     & span {
