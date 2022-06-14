@@ -14,7 +14,8 @@ html {
   overflow-x: hidden; }
 
 body {
-  background-image: url(../imgs/background.png); }
+  background-image: url(../imgs/background.png);
+  overflow-x: hidden; }
 
 h1 {
   font-size: 2em; }
