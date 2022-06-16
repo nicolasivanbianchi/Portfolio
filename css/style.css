@@ -69,7 +69,7 @@ span {
   justify-content: center;
   gap: 10px; }
   .imgs img {
-    width: 100%;
+    width: auto;
     height: auto; }
 
 .portfolio .container {
@@ -151,8 +151,18 @@ span {
 
 /* mq mobile */
 @media screen and (max-width: 480px) {
-  body {
-    width: 480px; }
+  .imgs {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 60px 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; }
+    .imgs img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
   .footer-content .footer-content__p1,
   .footer-content .footer-content__p2 {
     font-size: 15px;
@@ -177,6 +187,18 @@ span {
 
 /* mq tablet */
 @media screen and (max-width: 1024px) {
+  .imgs {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 60px 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; }
+    .imgs img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
   .wrapper__technology {
     width: 100vw; }
   .portfolio-headings h2 {
