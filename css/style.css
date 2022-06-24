@@ -277,9 +277,6 @@ span {
   color: #fff; }
 
 /* navbar menu */
-.bgcolor {
-  background: linear-gradient(transparent, #64F4AC); }
-
 .nav-link {
   margin-right: 30px; }
   .nav-link:hover {
