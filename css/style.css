@@ -277,6 +277,9 @@ span {
   color: #fff; }
 
 /* navbar menu */
+.bgcolor {
+  background-color: #28282B; }
+
 .nav-link {
   margin-right: 30px; }
   .nav-link:hover {
