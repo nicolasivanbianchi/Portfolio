@@ -1,3 +1,0 @@
-“Agregué los meta keywords y meta description para el INDEX y para cada HTML”
-
-“Cambié el h2 del footer por un h3”

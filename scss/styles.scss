@@ -15,7 +15,7 @@ html {
     overflow-x: hidden;
 }
 
-body{
+body {
     background-image: url(../imgs/background.png);
     overflow-x: hidden;
 }
@@ -47,6 +47,11 @@ span {
     width: 100%;
     height: 100vh;
     overflow: hidden;
+}
+
+.container__background h2 {
+    position: relative;
+    z-index: 50;
 }
 
 .bubbles {
@@ -177,28 +182,34 @@ span {
         }
     }
 
-    .facebook:hover{
+    .facebook:hover {
         color: #4292FF;
     }
-    .twitter:hover{
+
+    .twitter:hover {
         color: rgb(32, 139, 178);
     }
-    .instagram:hover{
+
+    .instagram:hover {
         background: radial-gradient(circle at 33% 100%,
-        #fed373 5%,
-        #f15245 30%,
-        #d92e7f 62%,
-        #9b36b7 85%,
-        #515ecf);
-        border-radius: 30%;;
+                #fed373 5%,
+                #f15245 30%,
+                #d92e7f 62%,
+                #9b36b7 85%,
+                #515ecf);
+        border-radius: 30%;
+        ;
     }
-    .linkedin:hover{
+
+    .linkedin:hover {
         color: #0A66C2;
     }
-    .github:hover{
+
+    .github:hover {
         color: $white-color;
     }
-    .whatsapp:hover{
+
+    .whatsapp:hover {
         color: #00E676;
     }
 
@@ -217,7 +228,7 @@ span {
 
 /* mq mobile */
 @include mobile(sm) {
-    .imgs{
+    .imgs {
         width: 90%;
         margin: 0 auto;
         overflow: hidden;
@@ -225,7 +236,8 @@ span {
         display: flex;
         gap: 20px;
         flex-wrap: wrap;
-        & img{
+
+        & img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -272,7 +284,7 @@ span {
 
 /* mq tablet */
 @include tablet(md) {
-    .imgs{
+    .imgs {
         width: 90%;
         margin: 0 auto;
         overflow: hidden;
@@ -280,12 +292,14 @@ span {
         display: flex;
         gap: 20px;
         flex-wrap: wrap;
-        & img{
+
+        & img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
+
     .wrapper__technology {
         width: 100vw;
     }
@@ -342,18 +356,18 @@ span {
     }
 }
 
-.color {
+.animation-fullfilled {
     display: inline-block;
     justify-content: center;
     -webkit-box-reflect: below 20px linear-gradient(transparent, #0002);
 
     & h2 {
-        color: $primary-color;
+        color: $white-color;
         letter-spacing: 0.15rem;
         font-size: 25px;
+        white-space: nowrap;
         overflow: hidden;
         border-right: 0.15rem solid $primary-color;
-        white-space: nowrap;
         margin: 0 auto;
         letter-spacing: 0.15rem;
         animation:
@@ -396,12 +410,13 @@ span {
     }
 }
 
-.container h1, .container h2{
+.container h1,
+.container h2 {
     color: $white-color;
 }
 
 /* navbar menu */
-.bgcolor{
+.bgcolor {
     background-color: #28282B;
 }
 
@@ -502,7 +517,7 @@ span {
 /*STYLES TECHNOLOGY*/
 
 .main-tech {
-    height: 65vh;
+    height: 70vh;
 }
 
 .wrapper {
@@ -546,7 +561,7 @@ span {
         font-size: 20px;
         font-weight: 500;
         line-height: 50px;
-        margin-left: 10px;     
+        margin-left: 10px;
     }
 
     & .icon {
