@@ -7,20 +7,235 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
-    <!-- keywords SEO -->
+    
+        <!-- keywords SEO -->
     <meta name="keywords"
         content="ESTUDIANTE, PROGRAMACIÓN, PRESENTACIÓN PERSONAL, PÁGINA INICIAL, PRESENTACIÓN PORTFOLIO NICOLÁS BIANCHI">
-    <!-- description SEO -->
+    
+        <!-- description SEO -->
     <meta name="description"
         content="Hola, soy Nico, futuro full stack developer, actualmente estudiante de programación full stack en Coderhouse, enfocado en la programación Front-End y Back-End. ">
     <title>Home | Nicolás Bianchi</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="./imgs/favicon-16x16.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="icon" type="image/jpg" href="./imgs/icon-smile.webp">
+    
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!-- custom css -->
     <link rel="stylesheet" href="css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-<h2>Under construction<span></span><span>...</span></h2>
+<body>
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Hello, Welcome to my site! <span>ツ</span></a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+        
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>I'M</h3>
+            <h1>NICOLÁS BIANCHI</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>My goal is to help the company achieve it's objectives by contributing my experience and skills in the performance of my position, having the opportunity to grow professionally every day.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/nicolasbianchii" target="_blank"><i class="bx bxl-facebook"></i></a>
+                <a href="https://twitter.com/NickoBianchiOk" target="_blank"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.instagram.com/nicolas.biaanchi/" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+                <a href="https://www.linkedin.com/in/nicolasbianchi-dev/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/nicolasivanbianchi" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+            <a download="Nicolás Bianchi CV" href="Download CV Nicolás Bianchi.pdf" class="btn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="./imgs/groot1.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./imgs/groot2.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Front-End Developer!</h3>
+            <p>Hello, my name is Nicolás Bianchi, I am 24 years old and I am from Buenos Aires, <span>Ar</span>ge<span id="yellow_arg">n</span>ti<span>na</span>.</p> 
+            <div class="bandera">
+                <div class="arg1"></div>
+                <div class="arg2"></div>
+                <div class="arg3"></div>
+            </div>
+
+            <p>
+                I've been close to a computer since an early age, and been passionate about it ever since.
+            </p>
+
+            <p>
+                In the year 2021, together with the Covid-19 pandemic, I began to investigate the world of programming since I liked it since I was a child. And I began to study it in a self-taught way with free internet bootcamps. Starting in 2022 I decided to pay for a bootcamp to be able to start the Full-Stack Programmer career since I liked the idea of having challenges on "real" projects that they asked me for in the bootcamp and obtaining the corresponding certificates for each course that I managed to pass. Currently I am already received as a front-end developer with three courses (web development, javascript and react.js). I am currently in the back-end development course and I love it!
+            </p>
+
+            <p>
+                I am looking for my first job as a front-end developer to be able to provide all my knowledge and help to the company and start my professional career so that I can learn even more about this beautiful profession and passion that is programming.
+            </p>
+
+            <p>I have work experience in Microsoft Visual Basic (Excel) and also in fiber optics, administration and logistics.</p>
+
+            <p>I have minimal knowledge of English and Portuguese languages.</p>
+            <a download="Nicolás Bianchi CV" href="Download CV Nicolás Bianchi.pdf" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box" id="first-p">
+                <i class="bx bx-code-alt"></i>
+                <h3>App and Websites Development</h3>
+                <p id="1st-P">• HTML • CSS • BOOTSTRAP • TAILWIND • JAVASCRIPT • REACT.JS • NODE.JS • SEO • SASS • SCSS • BALSAMIQ • FIGMA • WHIMSICAL • EXCEL • MICROSOFT VISUAL BASIC • CMS (Drupal, WordPress). </p>
+                <a download="Nicolás Bianchi CV" href="Download CV Nicolás Bianchi.pdf" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box" id="second-p">
+                <i class="bx bxl-microsoft"></i>
+                <h3>Macro Programmer in Excel</h3>
+                <p>Visual Basic is a graphical application development environment for the Microsoft Windows operating system. Applications created with Visual Basic are object-based and event-driven.</p>
+                <a download="Nicolás Bianchi CV" href="Download CV Nicolás Bianchi.pdf" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box" id="third-p">
+                <i class="bx bx-task"></i>
+                <h3>Logistics and Administrative</h3>
+                <p>Optimization of the company's product acquisition, storage, transportation and distribution processes, in terms of maximum efficiency in terms of costs and time.</p>
+                <a download="Nicolás Bianchi CV" href="Download CV Nicolás Bianchi.pdf" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="./imgs/portfolio1.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>E-Commerce M&N Eats</h4>
+                    <p>HTML, CSS, JAVASCRIPT, REACT.JS</p>
+                    <a href="https://ecommerce-react-sable.vercel.app/" target="_blank"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="./imgs/portfolio2.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Calculator</h4>
+                    <p>HTML, CSS, JAVASCRIPT</p>
+                    <a href="https://nicolasivanbianchi.github.io/Calculator/" target="_blank"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="./imgs/portfolio3.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>To-Do List</h4>
+                    <p>HTML, CSS, JAVASCRIPT</p>
+                    <a href="https://nicolasivanbianchi.github.io/To-Do-List/" target="_blank">
+                    <i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="./imgs/portfolio4.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Scratch Effect</h4>
+                    <p>HTML, JAVASCRIPT</p>
+                    <a href="https://nicolasivanbianchi.github.io/ScratchEffect/" target="_blank"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="./imgs/portfolio5.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Scanning Animation</h4>
+                    <p>HTML, CSS</p>
+                    <a href="https://nicolasivanbianchi.github.io/Scanning-Animation/" target="_blank"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="./imgs/portfolio6.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>SlideBar Show</h4>
+                    <p>HTML, CSS, JAVASCRIPT</p>
+                    <a href="https://nicolasivanbianchi.github.io/SlideBar-Show/" target="_blank"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <div class="input-box">
+                <input type="text" id="full_name" placeholder="Full Name">
+                <input type="email" id="email_id" placeholder="Email Address">
+            </div>
+
+            <div class="input-box">
+                <input type="number" id="mobile_number" placeholder="Mobile Number">
+                <input type="text" id="email_subject" placeholder="Email Subject">
+            </div>
+
+            <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input onclick="SendMail()" type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- footer section design  -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Designed &copy; 2023 by Nicolás Bianchi | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bxs-chevron-up'></i></a>
+        </div>
+    </footer>
+
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+
+    <!-- EmailJs contact form -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('am-QXnQans2YWf9xm')
+    </script>
 </body>
 </html>
